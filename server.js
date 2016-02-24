@@ -20,6 +20,10 @@ app.get(/\w\.\w/, function (req, res) {
 
         org = req.path.substring(1).replace(/(http:\/\/|https:\/\/)/, "");
 
+    } else {
+
+        org = req.path.substring(1);
+
     }
 
     short[ran] = org;
