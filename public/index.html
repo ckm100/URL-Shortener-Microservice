@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>URL Shortener Microservice</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <h1>URL Shortener Microservice</h1>
+
+    <h4>User Story</h4>
+
+
+    <ol>
+
+        <li> You can pass a URL as a parameter and you will receive a shortened URL in the JSON response.</li>
+
+        <li> If you pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+
+        <li>When you visit that shortened URL, it will redirect you to the original link.</li>
+
+    </ol>
+
+    <h3>Example Creation Usage:</h3>
+
+    <code>https://thawing-refuge-32459.herokuapp.com/freecodecamp.com</code>
+
+    <code>https://thawing-refuge-32459.herokuapp.com/freecodecamp.com/ckm100</code>
+
+    <h3>Example Creation Output:</h3>
+
+    <code>{ "original_url": "http://freecodecamp.com/ckm100", "short_url": "https://thawing-refuge-32459.herokuapp.com/12" }</code>
+
+    <h3>Usage:</h3>
+
+    <code>https://thawing-refuge-32459.herokuapp.com/12</code>
+
+    <h3>Will redirect to:</h3>
+
+    <code>http://freecodecamp.com/ckm100</code>
+
+</body>
+
+</html>
