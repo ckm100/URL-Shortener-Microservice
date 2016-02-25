@@ -8,6 +8,8 @@ var http = require("http"),
 
 short[12] = "freecodecamp.com/ckm100";
 
+app.set("json spaces", 5);
+
 app.set('port', (process.env.PORT || 9000))
 
 app.use(express.static(path.join(__dirname, "public")));
